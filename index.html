@@ -58,19 +58,28 @@
             </p>
         </section>
 
-        <section id="#qr">
-            <h3>Ajudeu-me a triar:</h3>
-            <a href="https://wetopi.com/qr" target="_blank"><img src="assets/qr-code.png" class="responsive-image"
-                                                                 style="max-height: 400px; margin:0;"></a>
-            <p style="margin-bottom: 70px;"><small><a href="https://wetopi.com/qr"
-                                                      target="_blank">wetopi.com/qr</a></small></p>
-            <iframe class="lazy-iframe"
-                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=intro"></iframe>
+        <section>
+
+            <section class="disable-layout">
+                <h2>Seguretat: tràfic no desitjat</h2>
+                <img class="a" src="assets/seguretat-trafic-no-legitim.png">
+                <img class="b" src="assets/seguretat-trafic-legitim.png">
+            </section>
+
+            <section id="#qr">
+                <h3>Ajudeu-me a triar:</h3>
+                <a href="https://wetopi.com/qr" target="_blank"><img src="assets/qr-code.png" class="responsive-image"
+                                                                     style="max-height: 400px; margin:0;"></a>
+                <p style="margin-bottom: 70px;"><small><a href="https://wetopi.com/qr"
+                                                          target="_blank">wetopi.com/qr</a></small></p>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=intro"></iframe>
+            </section>
         </section>
 
         <section id="#trafic-ab">
             <section class="disable-layout">
-                <h2>Seguretat: tràfic no desitjat</h2>
+                <h2>Seguretat: identifica el tràfic</h2>
                 <img class="a" src="assets/seguretat-trafic-no-legitim.png">
                 <img class="b" src="assets/seguretat-trafic-legitim.png">
             </section>
@@ -145,8 +154,8 @@
             <section>
                 <h2>No funciona: ranking causes</h2>
                 <ol>
-                    <li>Actualització (automàtica) provoca conflicte</li>
-                    <li>Base de dades amb errors.</li>
+                    <li>Actualització (automàtica) provoca conflicte.</li>
+                    <li>Base de dades <br><small>(timeouts, errors)</small></li>
                     <li>Certificat https no renovat.</li>
                     <li>Esgotat algun límit de recursos.</li>
                     <li>Dependència externa falla.</li>
@@ -167,6 +176,10 @@
                 <iframe class="lazy-iframe"
                         data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=nofunciona"></iframe>
 
+            </section>
+
+            <section id="no-funciona-health-check-and-troubleshooting">
+                <img src="assets/no-funciona-health-check-and-troubleshooting.png">
             </section>
 
 
@@ -214,7 +227,7 @@
                 <p>Volem que la web carregui ràpid</p>
             </section>
 
-            <section>
+            <section id="etapes">
                 <h2>Velocitat: etapes</h2>
 
                 <ol class="alpha">
@@ -240,7 +253,7 @@
                     <li>Tallafocs: fora de WP</li>
                     <li>Redireccions: fora de WP</li>
                     <li>Base de dades: motor Innodb</li>
-                    <li>Evita temes de propòsit general</li>
+                    <li>Evita temes multiproposit i<br>constructors pesats.<br><small class="fragment">Divi,Avada, Jupiter, X Theme, ...</small></li>
                 </ul>
             </section>
 
@@ -271,8 +284,18 @@
         </section>
 
         <section id="velocitat-al-back-ab-cdn" class="disable-layout">
-            <h4>Si incremento la memòria de WordPress aquest anirà més ràpid?</h4>
-            <img src="assets/cdn.png" style="max-width: 1200px;">
+            <h4>Si incremento la memòria de WordPress, anirà més ràpid?</h4>
+            <pre style="margin-bottom: 100px;"><code>
+                // ... wp-config.php
+                define('WP_MEMORY_LIMIT', '512M');
+                ...
+            </code></pre>
+                <div class="a">
+                    <h3>(A) Si<br><small>en alguns casos</small></h3>
+                </div>
+                <div class="b" style="margin-right: 1em;">
+                    <h3>(B) No</h3>
+                </div>
             <iframe class="lazy-iframe"
                     data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=mesmemoria"></iframe>
         </section>
@@ -326,9 +349,12 @@
             <h1>moltes gràcies :)</h1>
             <ul>
                 <li>Presentació<br>
-                    <small>github: <a href="https://github.com/sitamet/casos-ab-tria-el-millor-per-wordpress">sitamet/casos-ab-tria-el-millor-per-wordpress</a>/</small></li>
+                    <small>github: <a
+                            href="https://github.com/sitamet/casos-ab-tria-el-millor-per-wordpress">sitamet/casos-ab-tria-el-millor-per-wordpress</a>/</small>
+                </li>
                 <li>Vota A/B: un experiment<br>
-                    <small>github: <a href="https://github.com/sitamet/vote-ab">sitamet/vote-ab</a> i <a href="https://github.com/sitamet/vote-ab-server">sitamet/vote-ab-server</a></small></li>
+                    <small>github: <a href="https://github.com/sitamet/vote-ab">sitamet/vote-ab</a> i <a
+                            href="https://github.com/sitamet/vote-ab-server">sitamet/vote-ab-server</a></small></li>
                 <li>Gràcies reveal.js<br>
                     <small>github: <a href="https://github.com/hakimel/reveal.js">hakimel/reveal.js</a></small></li>
 
