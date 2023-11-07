@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./outfit-semibold-webfont.woff') format('woff');
+
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./outfit-light-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}

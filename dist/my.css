@@ -1,0 +1,7 @@
+
+@import url(./fonts/nunito/nunito.css);
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}

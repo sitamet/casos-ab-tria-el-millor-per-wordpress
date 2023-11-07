@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/wetopi.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Casos A/B<br>
+                Tria el millor per a WordPress</h2>
+        </section>
+
+        <section id="#jv">
+            <div style="display: flex; padding:0 100px;">
+                <div style="flex: 1;">
+                    <img src="assets/joan_vega_desktop.png" style="max-width: 420px;">
+                </div>
+                <div style="flex: 1; text-align: left; margin-left: 30px;">
+                    <h1 class="r-fit-text">Joan Vega</h1>
+                    <ul>
+                        <li>Full stack developer</li>
+                        <li>2008 els primers WP</li>
+                        <li>2015 allotjant WP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="#temes">
+            <h2>Temes a tractar</h2>
+            <ul>
+                <li>Seguretat</li>
+                <li>No funciona</li>
+                <li>Velocitat</li>
+            </ul>
+        </section>
+
+        <!-- Seguretat -->
+
+        <section id="#trafic">
+            <h2>Seguretat: tràfic no desitjat</h2>
+            <p class="fragment">2023: casi el 50% bots, 30% maliciosos.<br>
+                <small><a
+                        href="https://www.statista.com/statistics/1264226/human-and-bot-web-traffic-share/">Statista</a>,
+                    <a href="https://increditools.com/what-percentage-of-internet-traffic-is-bots/">Increditools</a>,
+                    <a href="https://blog.barracuda.com/2023/10/18/threat-spotlight-bad-bot-traffic-changing">Barracuda</a></small>
+            </p>
+        </section>
+
+        <section id="#qr">
+            <h3>Ajudeu-me a triar:</h3>
+            <a href="https://wetopi.com/qr" target="_blank"><img src="assets/qr-code.png" class="responsive-image"
+                                                                 style="max-height: 400px; margin:0;"></a>
+            <p style="margin-bottom: 70px;"><small><a href="https://wetopi.com/qr"
+                                                      target="_blank">wetopi.com/qr</a></small></p>
+            <iframe class="lazy-iframe"
+                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=intro"></iframe>
+        </section>
+
+        <section id="#trafic-ab">
+            <section class="disable-layout">
+                <h2>Seguretat: tràfic no desitjat</h2>
+                <img class="a" src="assets/seguretat-trafic-no-legitim.png">
+                <img class="b" src="assets/seguretat-trafic-legitim.png">
+            </section>
+
+            <section class="disable-layout">
+                <img class="a" src="assets/seguretat-trafic-no-legitim-zoom.png">
+                <img class="b" src="assets/seguretat-trafic-legitim-zoom.png">
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=trafic"></iframe>
+                <h3>Amb quin tràfic us quedaríeu?</h3>
+                <p>&nbsp;</p>
+            </section>
+        </section>
+
+        <section id="#necessitem-proteccio">
+
+            <section>
+                <h2>Necessitem protecció</h2>
+                <p>Intentem evitar al màxim el tràfic no desitjat</p>
+            </section>
+
+            <section class="disable-layout">
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=necessitemproteccio"></iframe>
+                <div>
+                    <img class="a" src="assets/seguretat-wp-insegur.png">
+                    <img class="b" src="assets/seguretat-wp-segur.png"></div>
+                <h2>quina és més segura?</h2>
+            </section>
+
+            <section>
+                <h2>Necessitem protecció</h2>
+                <ol sytle="clear: both;">
+                    <li>Actualitzacions</li>
+                    <li>Tallafocs extern WAF</li>
+                    <li>Bloqueig escriptura</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Necessitem protecció</h2>
+                <h3>ok... si tenim poc tràfic:</h3>
+                <ul>
+                    <li>Extensions tallafocs</li>
+                    <li>Limitadors de login</li>
+                </ul>
+            </section>
+
+
+        </section>
+
+
+        <!-- No funciona -->
+        <section>
+            <h1>No funciona</h1>
+        </section>
+
+        <section id="no-funciona">
+
+            <section>
+                <img src="assets/no-no-hemos-hecho-nada.webp">
+            </section>
+
+            <section>
+                <h2>Qualsevol petit canvi<br>
+                    pot fer caure la web.</h2>
+                <p>En aquest cas un canvi de config.</p>
+                <p>Però fins i tot sense fer res per part nostre,<br>
+                    WordPress i el seu contingut canvia.</p>
+            </section>
+
+            <section>
+                <h2>No funciona: ranking causes</h2>
+                <ol>
+                    <li>Actualització (automàtica) provoca conflicte</li>
+                    <li>Base de dades amb errors.</li>
+                    <li>Certificat https no renovat.</li>
+                    <li>Esgotat algun límit de recursos.</li>
+                    <li>Dependència externa falla.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>No funciona</h2>
+                <img src="assets/no-funciona-error.png">
+            </section>
+
+            <section class="disable-layout">
+                <h2>No funciona: que faig?</h2>
+                <img class="a" src="assets/no-funciona-a-obro-chat.png"
+                     style="width: 30%; box-shadow: none;">
+                <img class="b" src="assets/no-funciona-a-obro-logs.png" style="width: 60%">
+                <p>&nbsp;</p>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=nofunciona"></iframe>
+
+            </section>
+
+
+        </section>
+
+        <section id="el-disc-creix">
+            <section>
+                <h2>No se que passa!</h2>
+                <p>L'espai ocupat en disc creix<br>
+                    sense que jo faci res!!</p>
+            </section>
+
+            <section class="disable-layout">
+                <h2>Sense fer res?</h2>
+                <p>&nbsp;</p>
+                <div class="a">
+                    <h3>(A) Estrany</h3>
+                </div>
+                <div class="b">
+                    <h3>(B) Normal</h3>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=creixdisc"></iframe>
+            </section>
+
+
+            <section id="el-disc-creix">
+                <h2>L'espai en disc creix ... per:</h2>
+                <ul>
+                    <li>caché.</li>
+                    <li>sessions (carrets compra, registres, spam, bots, ...)</li>
+                    <li>backups locals.</li>
+                    <li>base de dades.</li>
+                    <li>extensió escriu a base de dades.</li>
+                </ul>
+            </section>
+        </section>
+
+
+        <!-- Velocitat -->
+        <section>
+
+            <section>
+                <h1>Velocitat</h1>
+                <p>Volem que la web carregui ràpid</p>
+            </section>
+
+            <section>
+                <h2>Velocitat: etapes</h2>
+
+                <ol class="alpha">
+                    <li>Servir la pàgina<br>
+                        <small>dns, processar, latència xarxa, ...</small>
+                    </li>
+
+                    <li>Pintar pàgina<br>
+                        <small>carregar recursos, aplicar estils, javascript, ...</small>
+                    </li>
+                </ol>
+            </section>
+        </section>
+
+        <section id="velocitat-al-back">
+
+            <section id="que-afecta">
+                <h2>Bases per servir la pàgina ràpid</h2>
+                <ul>
+                    <li>Extensions: les mínimes<br>
+                        <small>o evita les que afectin pintat o escriguin a bbdd.</small>
+                    </li>
+                    <li>Tallafocs: fora de WP</li>
+                    <li>Redireccions: fora de WP</li>
+                    <li>Base de dades: motor Innodb</li>
+                    <li>Evita temes de propòsit general</li>
+                </ul>
+            </section>
+
+            <section id="que-afecta">
+                <h2>... algun altre remei ?</h2>
+                <ul>
+                    <li>Millora servidor / hosting</li>
+                    <li>Cache</li>
+                    <li>Va fatal... Query Monitor<br>
+                        <small>(extensió anàlisi)</small></li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="velocitat-al-back-ab-extensions" class="disable-layout">
+            <h4>Quina es més lleugera?</h4>
+            <img class="a" src="assets/rendiment-wp-plugins-intenssos-lenta.png">
+            <img class="b" src="assets/rendiment-wp-plugins-intenssos-ok.png">
+            <iframe class="lazy-iframe"
+                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=pluginsintensos"></iframe>
+        </section>
+
+        <section id="velocitat-al-back-ab-cdn" class="disable-layout">
+            <h4>Posem CDN si tenim tràfic Europeu?</h4>
+            <img src="assets/cdn.png" style="max-width: 1200px;">
+            <iframe class="lazy-iframe"
+                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=cdn"></iframe>
+        </section>
+
+        <section id="velocitat-al-back-ab-cdn" class="disable-layout">
+            <h4>Si incremento la memòria de WordPress aquest anirà més ràpid?</h4>
+            <img src="assets/cdn.png" style="max-width: 1200px;">
+            <iframe class="lazy-iframe"
+                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=mesmemoria"></iframe>
+        </section>
+
+
+        <section id="velocitat-al-front">
+
+            <section id="que-afecta-al-front-resumit">
+                <h2>Bases per pintar la pàgina ràpid:</h2>
+                <ul>
+                    <li>Un bon hosting</li>
+                    <li>Un tema lleuger</li>
+                    <li>Poques extensions</li>
+                    <li>Imatge i vídeo lleugers i diferits</li>
+                </ul>
+            </section>
+
+            <section id="core-web-vitals" class="disable-layout">
+                <h2>Core Web Vitals</h2>
+                <p>Al crear una web, es important revisar</p>
+                <p>&nbsp;</p>
+                <div class="a">
+                    <h3>(A) Si<br><small>sempre les reviso</small></h3>
+                </div>
+                <div class="b" style="margin-right: 1em;">
+                    <h3>(B) No,<br><small>no em cal</small></h3>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=cwv"></iframe>
+            </section>
+
+            <section id="que-afecta-al-front">
+                <h2>...algun detall més concret?</h2>
+                <ul>
+                    <li>Optimitza les imatges: webp, svg<br>
+                        <small>i en especial la principal (LCP)</small>
+                    </li>
+                    <li>Imatges amb les seves mides<br>
+                        <small>per evitar salts (CLS)</small>
+                    </li>
+                    <li>Lazy loading per imatges i vídeos</li>
+
+                    <li>Javascript: el mínim (FID)<br>
+                        <small>i diferit: <code>&lt;script defer ...</code></small></li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section id="fi">
+            <h1>moltes gràcies :)</h1>
+            <ul>
+                <li>Presentació<br>
+                    <small>github: <a href="https://github.com/sitamet/vote-ab">sitamet/casos-ab-tria-el-millor-per-wordpress</a>/</small></li>
+                <li>Vota A/B: un experiment<br>
+                    <small>github: <a href="https://github.com/sitamet/vote-ab">sitamet/vote-ab</a> i <a href="https://github.com/sitamet/vote-ab-server">sitamet/vote-ab-server</a></small></li>
+                <li>Gràcies reveal.js<br>
+                    <small>github: <a href="https://github.com/hakimel/reveal.js">hakimel/reveal.js</a></small></li>
+
+            </ul>
+        </section>
+    </div>
+</div>
+<script src="dist/reveal.js"></script>
+<script src="plugin/zoom/zoom.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        margin: 0,
+        hash: true,
+        progress: false,
+        width: 1150,
+
+        // Vertical centering of slides
+        center: true,
+        disableLayout: false,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealHighlight, RevealZoom]
+    });
+
+
+    Reveal.addEventListener('slidechanged', function (event) {
+        // Encuentra todos los iframes dentro de la diapositiva actual
+        let iframes = event.currentSlide.querySelectorAll('.lazy-iframe');
+        Array.prototype.forEach.call(iframes, function (iframe) {
+            // Verifica si el iframe ya tiene un 'src' para no cargarlo de nuevo
+            if (!iframe.src) {
+                // Establece el 'src' del iframe a partir del 'data-src'
+                iframe.src = iframe.getAttribute('data-src');
+            }
+        });
+    });
+
+
+</script>
+</body>
+</html>

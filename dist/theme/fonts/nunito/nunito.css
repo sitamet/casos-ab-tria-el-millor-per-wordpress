@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Nunito';
+         url('./Nunito-ExtraBold.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: bold;
+}
