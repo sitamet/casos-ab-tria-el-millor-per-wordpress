@@ -16,57 +16,37 @@
 <body>
 <div class="reveal">
     <div class="slides">
-        <section>
+        <section id="start">
             <h2>Casos A/B<br>
                 Tria el millor per a WordPress</h2>
         </section>
 
-        <section id="#jv">
+        <section id="jv" data-background-color="#e9e9e9">
             <div style="display: flex; padding:0 100px;">
                 <div style="flex: 1;">
-                    <img src="assets/joan_vega_desktop.png" style="max-width: 420px;">
+                    <img src="assets/oric-1-then-sony-msx.webp" style="max-width: 420px;">
                 </div>
-                <div style="flex: 1; text-align: left; margin-left: 30px;">
+                <div style="flex: 1; text-align: left; margin: 3em 0 0 1em;">
                     <h1 class="r-fit-text">Joan Vega</h1>
                     <ul>
                         <li>Full stack developer</li>
                         <li>2008 els primers WP</li>
-                        <li>2015 allotjant WP</li>
+                        <li>2015 hosting WP</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="#temes">
-            <h2>Temes a tractar</h2>
-            <ul>
-                <li>Seguretat</li>
-                <li>No funciona</li>
-                <li>Velocitat</li>
-            </ul>
-        </section>
-
-        <!-- Seguretat -->
-
-        <section id="#trafic">
-            <h2>Seguretat: tràfic no desitjat</h2>
-            <p class="fragment">2023: casi el 50% bots, 30% maliciosos.<br>
-                <small><a
-                        href="https://www.statista.com/statistics/1264226/human-and-bot-web-traffic-share/">Statista</a>,
-                    <a href="https://increditools.com/what-percentage-of-internet-traffic-is-bots/">Increditools</a>,
-                    <a href="https://blog.barracuda.com/2023/10/18/threat-spotlight-bad-bot-traffic-changing">Barracuda</a></small>
-            </p>
-        </section>
-
-        <section>
-
-            <section class="disable-layout">
-                <h2>Seguretat: tràfic no desitjat</h2>
-                <img class="a" src="assets/seguretat-trafic-no-legitim.png">
-                <img class="b" src="assets/seguretat-trafic-legitim.png">
+        <section id="intro">
+            <section id="temes">
+                <h2>Temes a tractar</h2>
+                <ul>
+                    <li>Seguretat</li>
+                    <li>Rendiment <span style="font-weight:200; font-size:0.7em">(Velocitat)</span></li>
+                </ul>
             </section>
 
-            <section id="#qr">
+            <section id="qr">
                 <h3>Ajudeu-me a triar:</h3>
                 <a href="https://wetopi.com/qr" target="_blank"><img src="assets/qr-code.png" class="responsive-image"
                                                                      style="max-height: 400px; margin:0;"></a>
@@ -75,30 +55,48 @@
                 <iframe class="lazy-iframe"
                         data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=intro"></iframe>
             </section>
+
         </section>
 
-        <section id="#trafic-ab">
+        <!-- Seguretat -->
+
+        <section id="#trafic">
+            <h2>Seguretat: tràfic no desitjat</h2>
+            <p class="fragment">2023: casi el 50% bots, 30% maliciosos.<br>
+                <small>
+                    <a href="https://blog.barracuda.com/2023/10/18/threat-spotlight-bad-bot-traffic-changing">Barracuda</a>,
+                    <a href="https://www.statista.com/statistics/1264226/human-and-bot-web-traffic-share/">Statista</a>,
+                    <a href="https://increditools.com/what-percentage-of-internet-traffic-is-bots/">Increditools</a>,
+                    <a href="https://www.imperva.com/resources/resource-library/reports/2023-imperva-bad-bot-report/">Imperva</a></small>
+            </p>
+        </section>
+
+        <section id="trafic-no-desitjat">
+
             <section class="disable-layout">
-                <h2>Seguretat: identifica el tràfic</h2>
+                <h2>Seguretat: tràfic no desitjat</h2>
                 <img class="a" src="assets/seguretat-trafic-no-legitim.png">
                 <img class="b" src="assets/seguretat-trafic-legitim.png">
             </section>
 
-            <section class="disable-layout">
-                <img class="a" src="assets/seguretat-trafic-no-legitim-zoom.png">
-                <img class="b" src="assets/seguretat-trafic-legitim-zoom.png">
-                <iframe class="lazy-iframe"
-                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=trafic"></iframe>
-                <h3>Amb quin tràfic us quedaríeu?</h3>
-                <p>&nbsp;</p>
+            <section id="trafic-ab">
+                <section class="disable-layout">
+                    <img class="a" src="assets/seguretat-trafic-no-legitim-zoom.png">
+                    <img class="b" src="assets/seguretat-trafic-legitim-zoom.png">
+                    <iframe class="lazy-iframe"
+                            data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=trafic"></iframe>
+                    <h3>Amb quin tràfic us quedaríeu?</h3>
+                </section>
             </section>
+
         </section>
 
-        <section id="#necessitem-proteccio">
+
+        <section id="necessitem-proteccio">
 
             <section>
                 <h2>Necessitem protecció</h2>
-                <p>Intentem evitar al màxim el tràfic no desitjat</p>
+                <p>... enfront el tràfic no desitjat</p>
             </section>
 
             <section class="disable-layout">
@@ -122,10 +120,10 @@
 
             <section>
                 <h2>Necessitem protecció</h2>
-                <h3>ok... si tenim poc tràfic:</h3>
+                <h3>... si tenim poc tràfic,<br>ok a:</h3>
                 <ul>
-                    <li>Extensions tallafocs</li>
-                    <li>Limitadors de login</li>
+                    <li>Extensions tallafocs,</li>
+                    <li>limitadors de intents login</li>
                 </ul>
             </section>
 
@@ -133,9 +131,215 @@
         </section>
 
 
+        <!-- Rendiment -->
+        <section>
+
+            <section id="velocitat">
+                <h1>Rendiment <span style="font-weight:200; font-size:0.8em">(Velocitat)</span></h1>
+                <p>Volem que la web vagi ràpid</p>
+            </section>
+
+            <section id="velocitat-etapes">
+                <h2>Etapes <span style="font-weight:200; font-size:0.8em">(Velocitat)</span></h2>
+
+                <ol class="alpha">
+                    <li>Servir la pàgina<br>
+                        <small>dns, processar, latència xarxa, ...</small>
+                    </li>
+
+                    <li>Pintar pàgina<br>
+                        <small>carregar recursos, aplicar estils, javascript, ...</small>
+                    </li>
+                </ol>
+            </section>
+        </section>
+
+        <section id="velocitat-al-back">
+
+            <section id="velocitat-al-back-mesurar" class="disable-layout">
+                <h4>Mesurar Velocitat al "Servir la pàgina"</h4>
+                <img class="ab" src="assets/ttfb-mesurar-velocitat.webp" style="max-width: 700px; margin-top:-10px;">
+                <div class="a">
+                    <h4>(A) Amb les Developer tools</h4>
+                </div>
+                <div class="b">
+                    <h4>(B) No controlo les Dev tools</h4>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=whatisttfb"></iframe>
+            </section>
+
+
+            <section id="velocitat-al-back-ab-ttfb" class="disable-layout">
+                <img class="ab" src="assets/ttfb-comparativa.webp" style="max-width: 1100px; margin-top:-160px">
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=ttfb"></iframe>
+            </section>
+
+            <section id="velocitat-al-back-ab-extensions" class="disable-layout">
+                <h4>Quina es més lleugera?</h4>
+                <img class="a" src="assets/rendiment-wp-plugins-intenssos-lenta.png">
+                <img class="b" src="assets/rendiment-wp-plugins-intenssos-ok.png">
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=pluginsintensos"></iframe>
+            </section>
+
+            <section id="velocitat-que-fer-ara">
+                <h2>Que puc fer: Ara! Ja!!!</h2>
+                <ul>
+                    <li>Extensions: les mínimes<br>
+                        <small>o evita les que afectin pintat o escriguin a bbdd.</small>
+                    </li>
+                    <li>Tallafocs: fora de WP</li>
+                    <li>Redireccions: fora de WP</li>
+                    <li>Base de dades: motor Innodb</li>
+                </ul>
+            </section>
+
+            <section id="velocitat-al-back-ab-memoria" class="disable-layout">
+                <h3>Si incremento la memòria de WordPress, anirà més ràpid?</h3>
+                <pre style="margin-bottom: 100px;"><code>
+                // ... wp-config.php
+                define('WP_MEMORY_LIMIT', '512M');
+                ...
+                </code></pre>
+                <div class="a">
+                    <h4>(A) Si<br><small>en alguns casos</small></h4>
+                </div>
+                <div class="b">
+                    <h4>(B) No</h4>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=mes_memoria"></iframe>
+            </section>
+
+            <section id="velocitat-al-back-ab-cores" class="disable-layout">
+                <h2 style="margin:2em 0">I si escalo i assigno més Cores?</h2>
+                <div class="a">
+                    <h4>(A) Anirà mes ràpid.</h4>
+                </div>
+                <div class="b">
+                    <h4>(B) Probablement no.</h4>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=mes_cores"></iframe>
+            </section>
+
+            <section id="velocitat-una-bona-base">
+                <h2>Procurar sempre una bona base</h2>
+                <ul style="margin-top: 1em">
+                    <li>Un bon Hosting: TTFB<200 + HTTP/3 + Compressors</li>
+                    <li>Evita temes multiproposit i<br>constructors pesats<br><small
+                            class="fragment">Ideal: "Temes de Blocks"</small></li>
+                </ul>
+            </section>
+
+            <section id="velocitat-al-back-ab-cdn">
+                <h3>Tenim usuaris a Europa ...</h3>
+                <img src="assets/cdn.png" style="max-width: 1300px;">
+            </section>
+
+            <section id="velocitat-al-back-ab-cdn-ttfb" class="disable-layout">
+                <h3>Tenim usuaris a Europa ...</h3>
+                <a href="https://app.speedvitals.com/ttfb-test" target="_blank"><img src="assets/cdn-necessari-si-no.webp" style="max-width: 800px; margin-top:-10px;"></a>
+                <div class="a">
+                    <h4>(A) CDN necessari</h4>
+                </div>
+                <div class="b">
+                    <h4>(B) CDN no necessari</h4>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=cdn"></iframe>
+            </section>
+
+            <section id="velocitat-algun altre remei">
+                <h2>... algun altre remei ?</h2>
+                <ul>
+                    <li>Cache</li>
+                    <li>Impossible millorar Hosting: <span style="font-weight: 200; font-size: 0.9em">afegir CDN</span></li>
+                    <li>Inspeciona a fons: <span style="font-weight: 200; font-size: 0.9em">Query Monitor,  wp profile</span></li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="velocitat-al-front">
+
+            <section id="velocitat-al-front">
+                <h1>Rendiment</h1>
+                <p>Etapa: Pintar la página</p>
+            </section>
+
+            <section id="core-web-vitals" class="disable-layout">
+                <h2>Core Web Vitals</h2>
+                <div>
+                    <img src="assets/cwv-largest-contentful-paint.svg" style="max-width: 30%">
+                    <img src="assets/cwv-inp-thresholds.svg" style="max-width: 30%">
+                    <img src="assets/cwv-cumulative-layout-shift.svg" style="max-width: 30%">
+                </div>
+                <div class="a">
+                    <h3>(A) Si<br><small>les he incorporat a la dieta</small></h3>
+                </div>
+                <div class="b">
+                    <h3>(B) No<br><small>no se per on començar</small></h3>
+                </div>
+                <iframe class="lazy-iframe"
+                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=cwv"></iframe>
+            </section>
+
+
+            <section id="que-afecta-al-front-resumit">
+                <h2>Bases per pintar la pàgina ràpid:</h2>
+                <ul>
+                    <li>Un bon hosting</li>
+                    <li>Un tema lleuger</li>
+                    <li>Poques extensions</li>
+                    <li>Imatge i vídeo lleugers i diferits</li>
+                </ul>
+            </section>
+
+
+            <section id="que-afecta-al-front">
+                <h2>...algun detall més concret?</h2>
+                <ul>
+                    <li>Optimitza les imatges: webp, svg<br>
+                        <small>sobretot element principal (LCP)</small>
+                    </li>
+                    <li>Atribut <code style="font-size:.8em">fetchpriority="high"</code><br>
+                        <small>per l'element principal (LCP)</small>
+                    </li>
+                    <li>Imatges amb les seves mides<br>
+                        <small>per evitar salts (CLS)</small>
+                    </li>
+                    <li>Javascript: el mínim<br>
+                        <small>i diferit: <code>&lt;script defer</code>...  (INP)</small></li>
+                    <li>Lazy loading per imatges i vídeos</li>
+
+                </ul>
+            </section>
+
+        </section>
+
+
+        <section id="fi">
+            <h1>moltes gràcies :)</h1>
+            <ul>
+                <li>Presentació<br>
+                    <small>github: <a
+                            href="https://github.com/sitamet/casos-ab-tria-el-millor-per-wordpress">sitamet/casos-ab-tria-el-millor-per-wordpress</a>/</small>
+                </li>
+                <li>Vota A/B: un experiment<br>
+                    <small>github: <a href="https://github.com/sitamet/vote-ab">sitamet/vote-ab</a> i <a
+                            href="https://github.com/sitamet/vote-ab-server">sitamet/vote-ab-server</a></small></li>
+                <li>Gràcies reveal.js<br>
+                    <small>github: <a href="https://github.com/hakimel/reveal.js">hakimel/reveal.js</a></small></li>
+
+            </ul>
+        </section>
+
+
         <!-- No funciona -->
         <section>
-            <h1>No funciona</h1>
+            <h1>Quan passen coses...</h1>
         </section>
 
         <section id="no-funciona">
@@ -219,148 +423,6 @@
             </section>
         </section>
 
-
-        <!-- Velocitat -->
-        <section>
-
-            <section>
-                <h1>Velocitat</h1>
-                <p>Volem que la web carregui ràpid</p>
-            </section>
-
-            <section id="etapes">
-                <h2>Velocitat: etapes</h2>
-
-                <ol class="alpha">
-                    <li>Servir la pàgina<br>
-                        <small>dns, processar, latència xarxa, ...</small>
-                    </li>
-
-                    <li>Pintar pàgina<br>
-                        <small>carregar recursos, aplicar estils, javascript, ...</small>
-                    </li>
-                </ol>
-            </section>
-        </section>
-
-        <section id="velocitat-al-back">
-
-            <section id="que-afecta">
-                <h2>Bases per servir la pàgina ràpid</h2>
-                <ul>
-                    <li>Extensions: les mínimes<br>
-                        <small>o evita les que afectin pintat o escriguin a bbdd.</small>
-                    </li>
-                    <li>Tallafocs: fora de WP</li>
-                    <li>Redireccions: fora de WP</li>
-                    <li>Base de dades: motor Innodb</li>
-                    <li>Evita temes multiproposit i<br>constructors pesats.<br><small class="fragment">Divi,Avada, Jupiter, X Theme, ...</small></li>
-                </ul>
-            </section>
-
-            <section id="que-afecta">
-                <h2>... algun altre remei ?</h2>
-                <ul>
-                    <li>Millora servidor / hosting</li>
-                    <li>Cache</li>
-                    <li>Va fatal... Query Monitor<br>
-                        <small>(extensió anàlisi)</small></li>
-                </ul>
-            </section>
-        </section>
-
-        <section id="velocitat-al-back-ab-extensions" class="disable-layout">
-            <h4>Quina es més lleugera?</h4>
-            <img class="a" src="assets/rendiment-wp-plugins-intenssos-lenta.png">
-            <img class="b" src="assets/rendiment-wp-plugins-intenssos-ok.png">
-            <iframe class="lazy-iframe"
-                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=pluginsintensos"></iframe>
-        </section>
-
-        <section id="velocitat-al-back-ab-cdn" class="disable-layout">
-            <h4>Posem CDN si tenim tràfic Europeu?</h4>
-            <img src="assets/cdn.png" style="max-width: 1200px;">
-            <iframe class="lazy-iframe"
-                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=cdn"></iframe>
-        </section>
-
-        <section id="velocitat-al-back-ab-cdn" class="disable-layout">
-            <h4>Si incremento la memòria de WordPress, anirà més ràpid?</h4>
-            <pre style="margin-bottom: 100px;"><code>
-                // ... wp-config.php
-                define('WP_MEMORY_LIMIT', '512M');
-                ...
-            </code></pre>
-                <div class="a">
-                    <h3>(A) Si<br><small>en alguns casos</small></h3>
-                </div>
-                <div class="b" style="margin-right: 1em;">
-                    <h3>(B) No</h3>
-                </div>
-            <iframe class="lazy-iframe"
-                    data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=mesmemoria"></iframe>
-        </section>
-
-
-        <section id="velocitat-al-front">
-
-            <section id="que-afecta-al-front-resumit">
-                <h2>Bases per pintar la pàgina ràpid:</h2>
-                <ul>
-                    <li>Un bon hosting</li>
-                    <li>Un tema lleuger</li>
-                    <li>Poques extensions</li>
-                    <li>Imatge i vídeo lleugers i diferits</li>
-                </ul>
-            </section>
-
-            <section id="core-web-vitals" class="disable-layout">
-                <h2>Core Web Vitals</h2>
-                <p>Al crear una web, es important revisar</p>
-                <p>&nbsp;</p>
-                <div class="a">
-                    <h3>(A) Si<br><small>sempre les reviso</small></h3>
-                </div>
-                <div class="b" style="margin-right: 1em;">
-                    <h3>(B) No,<br><small>no em cal</small></h3>
-                </div>
-                <iframe class="lazy-iframe"
-                        data-src="https://vote-ab-cb2e2bb504c7.herokuapp.com/results?page=cwv"></iframe>
-            </section>
-
-            <section id="que-afecta-al-front">
-                <h2>...algun detall més concret?</h2>
-                <ul>
-                    <li>Optimitza les imatges: webp, svg<br>
-                        <small>i en especial la principal (LCP)</small>
-                    </li>
-                    <li>Imatges amb les seves mides<br>
-                        <small>per evitar salts (CLS)</small>
-                    </li>
-                    <li>Lazy loading per imatges i vídeos</li>
-
-                    <li>Javascript: el mínim (FID)<br>
-                        <small>i diferit: <code>&lt;script defer ...</code></small></li>
-                </ul>
-            </section>
-
-        </section>
-
-        <section id="fi">
-            <h1>moltes gràcies :)</h1>
-            <ul>
-                <li>Presentació<br>
-                    <small>github: <a
-                            href="https://github.com/sitamet/casos-ab-tria-el-millor-per-wordpress">sitamet/casos-ab-tria-el-millor-per-wordpress</a>/</small>
-                </li>
-                <li>Vota A/B: un experiment<br>
-                    <small>github: <a href="https://github.com/sitamet/vote-ab">sitamet/vote-ab</a> i <a
-                            href="https://github.com/sitamet/vote-ab-server">sitamet/vote-ab-server</a></small></li>
-                <li>Gràcies reveal.js<br>
-                    <small>github: <a href="https://github.com/hakimel/reveal.js">hakimel/reveal.js</a></small></li>
-
-            </ul>
-        </section>
     </div>
 </div>
 <script src="dist/reveal.js"></script>
